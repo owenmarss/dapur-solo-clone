@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'Cabin Regular';
+    src: url(font/Cabin/static/Cabin-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cabin Semi';
+    src: url(font/Cabin/static/Cabin-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Cabin Bold';
+    src: url(font/Cabin/static/Cabin-Bold.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+#navbarNav a {
+    font-family: 'Cabin Semi';
+    font-size: 1.3rem;
+    color: #414141;
+}
+
+#navbarNav a:hover {
+    color: #c77a23;
+}
+
+.lokasi {
+    padding: 30px;
+    gap: 20px;
+    background-color: #F8F8F8;
+}
+
+.image-lokasi iframe {
+    box-shadow: 5px 5px 5px black;
+}
+
+.deskripsi-lokasi {
+    padding-bottom: 15px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #F19C38;
+    border-radius: 10px;
+    gap: 1vh;
+    padding-top: 10px;
+    background-color: #ffffff;
+}
+
+.nama-lokasi h1 {
+    font-family: "Cabin Bold";
+    font-size: 30px;
+    color: #F19C38;
+    text-shadow: 2px 2px 2px black;
+}
+
+.nama-lokasi h2 {
+    font-family: "Cabin Bold";
+    font-size: 30px;
+    color: #F19C38;
+    text-shadow: 2px 2px 2px black;
+}
+
+.alamat {
+    margin-top: 2px;
+}
+
+.alamat h1 {
+    font-family: "Cabin Semi";
+    font-size: 20px;
+    color: #562B0F;
+}
+
+.alamat p {
+    font-family: "Cabin Regular";
+    font-size: 15px;
+    color: #4f4f4f;
+}
+
+.nomor-telepon h1 {
+    font-family: "Cabin Semi";
+    font-size: 20px;
+    color: #562B0F;
+}
+
+.nomor-telepon p {
+    font-family: "Cabin Regular";
+    font-size: 15px;
+    color: #4f4f4f;
+}
+
+.lokasi-button {
+    margin-top: 10px;
+}
+
+.lokasi-button button {
+    padding: 5px 20px;
+    background-color: #ffffff;
+    border: 2px solid #F19C38;
+    border-radius: 10px;
+}
+
+.lokasi-button button:hover {
+    transform: scale(1.1);
+}
+
+.lokasi-button button a {
+    font-family: "Cabin Semi";
+    text-decoration: none;
+    font-size: 15px;
+    color: #F19C38;
+}
+
+.lokasi-button button a:hover {
+    text-decoration: underline;
+}
+
+.tabel-container {
+    padding-top: 2vh;
+    padding-bottom: 10vh;
+    padding-inline: 5vw;
+    border: 2px solid #F19C38;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    background-color: white;
+}
+
+.tabel-kelompok {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    padding: 30px;
+    align-items: center;
+}
+
+.judul-tabel-kelompok {
+    padding-top: 10px;
+}
+
+.judul-tabel-kelompok h1 {
+    font-family: "Cabin Bold";
+    font-size: 30px;
+    color: #F19C38;
+}
+
+.isi-tabel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.tabel-member {
+    display: flex;
+    align-items: center;
+}
+
+.tabel-member p {
+    font-family: "Cabin Semi";
+    width: 150px;
+    padding-block: 5px;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.tabel-member h3 {
+    font-family: "Cabin Semi";
+    text-align: center;
+    width: 100px;
+    font-weight: 700;
+    font-size: 15px;
+    padding-block: 5px;
+    margin-right: 100px;
+    margin-bottom: 0;
+}
+
+.tabel-member h5 {
+    font-family: "Cabin Semi";
+    text-align: center;
+    width: 300px;
+    border: 2px solid black;
+    font-weight: 600;
+    font-size: 15px;
+    padding-block: 5px;
+    margin-bottom: 0;
+}
+
+.logo-footer img {
+    width: 110px;
+    padding-top: 40px;
+}
+
+#judul-kelompok h1 {
+    font-family: "Cabin Bold";
+}
+
+#judul-kelompok p {
+    font-family: "Cabin Regular";
+}
+
+#nama-member {
+    gap: 50px;
+}
+
+#biodata #nama-member p {
+    width: 150px;
+    font-family: "Cabin Regular";
+}
+
+#biodata #nim-member p {
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    .tabel-member h3 {
+        margin-right: 50px;
+    }
+
+    #biodata #nama-member p {
+        width: 100px;
+    }
+
+    #biodata #nim-member p {
+        width: 100px;
+    }
+}
+
+@media (max-width: 575px) {
+    #biodata #nama-member p {
+        width: 100px;
+    }
+
+    #biodata #nim-member p {
+        width: 100px;
+    }
+}

@@ -1,0 +1,409 @@
+@font-face {
+    font-family: 'Cabin Regular';
+    src: url(font/Cabin/static/Cabin-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cabin Semi';
+    src: url(font/Cabin/static/Cabin-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Cabin Bold';
+    src: url(font/Cabin/static/Cabin-Bold.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+#navbarNav a {
+    font-family: 'Cabin Semi';
+    font-size: 1.3rem;
+    color: #414141;
+}
+
+#navbarNav a:hover {
+    color: #c77a23;
+}
+
+#slogan h1 {
+    font-family: 'Cabin Bold';
+    font-size: 2.8rem;
+    font-style: italic;
+    color: #562B0F;
+    text-shadow: 2px 2px 2px #3e3e3e;
+    word-spacing: 1px;
+}
+
+#slogan h1 span {
+    color: #EB832C;
+    letter-spacing: 2px;
+}
+
+#slogan p {
+    font-family: 'Cabin Regular';
+    font-size: 1.5rem;
+    color: #252525;
+}
+
+#box-container {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #9A9A9A;
+    gap: 10px;
+    margin-top: 150px;
+    padding-block: 25px;
+    padding-inline: 50px;
+}
+
+#judul-box h1 {
+    font-family: 'Cabin Bold';
+    font-size: 1.5rem;
+    color: #EB7D23;
+}
+
+#judul-box p {
+    font-family: 'Cabin Regular';
+    font-size: 1.2rem;
+    color: #EB7D23;
+}
+
+.button-container button {
+    padding-block: 3px;
+    padding-inline: 25px;
+    background-color: #F3A53E;
+    border: 0;
+    border-radius: 10px;
+}
+
+.button-container button a {
+    font-family: 'Cabin Regular';
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.button-container button:hover {
+    background-color: #ed9522;
+}
+
+.button-container button:hover a {
+    text-decoration: underline;
+}
+
+.favorit {
+    padding-block: 50px;
+    padding-inline: 50px;
+}
+
+.judul-menu {
+    margin-bottom: 50px;
+}
+
+.judul-menu h1 {
+    font-family: "Cabin Bold";
+    font-size: 2rem;
+    text-align: center;
+    color: #EB7D23;
+}
+
+.judul-menu p {
+    font-family: "Cabin Regular";
+    font-size: 1.2rem;
+    text-align: center;
+    color: #562B0F;
+}
+
+.isi-menu {
+    display: grid;
+    grid-template-columns: repeat(3,28vw);
+    justify-content: center;
+    gap: 50px;
+}
+
+.menu-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 1.5vw;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.menu-cards:hover {
+    border: 1px solid #8a8a8a;
+    box-shadow: 3px 3px 3px 3px #9A9A9A;
+}
+
+.menu-cards .menu-image img {
+    width: 28vw;
+    border-radius: 10px;
+}
+
+.menu-cards .deskripsi {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.menu-cards .deskripsi h1 {
+    font-family: 'Cabin Semi';
+    color: #562B0F;
+    font-size: 25px;
+}
+
+.menu-cards .deskripsi p {
+    font-family: "Cabin Regular";
+    color: #9A9A9A;
+}
+
+.menu-cards .harga p {
+    font-family: "Cabin Regular";
+    font-size: 25px;
+    color: #F19C38;
+}
+
+.menu-button button {
+    padding-block: 3px;
+    padding-inline: 25px;
+    background-color: #F19C38;
+    border: 1px solid #F19C38;
+    border-radius: 10px;
+}
+
+.menu-button button:hover {
+    background-color: #ed9522;
+}
+
+.menu-button button:active {
+    transform: scale(1.2);
+}
+
+.menu-button button a {
+    font-family: "Cabin Regular";
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #ffffff;    
+}
+
+#bottom-box {
+    gap: 15px;
+    background-color: #ffffff;
+    width: 500px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-inline: 20px;
+    top: 145px;
+    left: 360px;
+    border-radius: 10px;
+    border: 1px solid #8a8a8a;
+    box-shadow: 2px 2px 2px 2px #9A9A9A;
+}
+
+#bottom-logo img {
+    width: 80px;
+}
+
+.judul-bottom h1 {
+    font-family: "Cabin Semi";
+    color: #F19C38;
+    font-size: 22px;
+    text-align: center;
+}
+
+.deskripsi-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.deskripsi-bottom p {
+    font-family: "Cabin Regular";
+    font-size: 15px;
+    text-align: center;
+    color: #9A9A9A;
+}
+
+.bottom-logo img {
+    width: 80px;
+}
+
+.bottom-button {
+    padding-top: 20px;
+}
+
+.bottom-button button {
+    padding-block: 5px;
+    padding-inline: 10px;
+    border: 2px solid #F19C38;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.bottom-button button:hover {
+    background-color: #f4f4f4;
+}
+
+.bottom-button button:active {
+    transform: scale(1.2);
+}
+
+.bottom-button button a {
+    font-family: "Cabin Regular";
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    color: #F19C38;
+}
+
+.bottom-button button a:hover {
+    text-decoration: underline;
+}
+
+.logo-footer img {
+    width: 110px;
+    padding-top: 40px;
+}
+
+#judul-kelompok h1 {
+    font-family: "Cabin Bold";
+}
+
+#judul-kelompok p {
+    font-family: "Cabin Regular";
+}
+
+#nama-member {
+    gap: 50px;
+}
+
+#biodata #nama-member p {
+    width: 150px;
+    font-family: "Cabin Regular";
+}
+
+#biodata #nim-member p {
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    #slogan {
+        top: 0;
+    }
+
+    #slogan h1 {
+        font-size: 2rem;
+    }
+
+    #slogan p {
+        font-size: 1.2rem;
+    }
+
+    #box-container {
+        margin-top: 75px;
+    }
+
+    #judul-box h1 {
+        font-size: 1rem;
+    }
+
+    #judul-box p {
+        font-size: 1rem;
+    }
+
+    .button-container button a {
+        font-size: 0.5rem;
+    }
+
+    .isi-menu {
+        gap: 25px;
+    }
+
+    .menu-cards {
+        padding-bottom: 75px;
+    }
+
+    .menu-cards .deskripsi h1 {
+        font-size: 1.2rem;
+    }
+
+    #bottom-box {
+        top: 100px;
+        left: 150px;
+        padding-top: 15px;
+        padding-bottom: 35px;
+    }
+    
+    #biodata #nama-member p {
+        width: 100px;
+    }
+
+    #biodata #nim-member p {
+        width: 100px;
+    }
+}
+
+@media (max-width: 575px) {
+    #slogan h1 {
+        font-size: 1rem;
+    }
+
+    #slogan p {
+        font-size: 1rem;
+    }
+
+    #box-container {
+        margin-top: 25px;
+    }
+
+    #judul-box h1 {
+        font-size: 0.6rem;
+    }
+
+    #judul-box p {
+        font-size: 0.6rem;
+    }
+
+    .button-container button a {
+        font-size: 1rem;
+    }
+
+    .isi-menu {
+        gap: 25px;
+    }
+
+    .isi-menu {
+        grid-template-columns: repeat(2,28vw);
+    }
+
+    .menu-cards {
+        padding-bottom: 75px;
+    }
+
+    .menu-cards .deskripsi h1 {
+        font-size: 1rem;
+    }
+
+    #bottom-box {
+        top: 50px;
+        left: 40px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
+    
+    #biodata #nama-member p {
+        width: 100px;
+    }
+
+    #biodata #nim-member p {
+        width: 100px;
+    }
+}

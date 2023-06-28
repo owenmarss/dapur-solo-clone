@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Reservation </title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg d-flex align-items-center px-5" style="background-color: #f7f7f7;">
+        <div class="navbar-brand">
+            <a href="home.html">
+                <img src="images/logo.png" alt="" width="200">
+            </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="navbar-nav ml-auto">
+                <a href="home.html" class="nav-link active me-5"> Home </a>
+                <a href="menu.html" class="nav-link active me-5"> Menu </a>
+                <a href="promo.html" class="nav-link active me-5"> Promo </a>
+                <a href="reservation.html" class="nav-link active me-5"> Reservation </a>
+                <a href="contact.html" class="nav-link active"> Contact Us </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="reservation">
+        <div class="background">
+            <img src="images/background.jpg" alt="">
+        </div>
+
+        <div class="reservation-container">
+            <div class="judul-reservation">
+                <h1> Reservation </h1>
+            </div>
+    
+            <div class="isi-reservation">
+                <form action="">
+                    <div class="form-input">
+                        <label for="input-nama"> Nama Lengkap: </label>
+                        <input type="text" name="input-nama" id="input-nama" class="input" placeholder="Masukan nama anda" required>
+                    </div>
+    
+                    <div class="form-input">
+                        <label for="input-email"> Email: </label>
+                        <input type="text" name="input-email" id="input-email" class="input" placeholder="Masukan email anda" required>
+                    </div>
+    
+                    <div class="form-input">
+                        <label for="input-telepon"> Telepon </label>
+                        <input type="text" name="input-telepon" id="input-telepon" class="input" placeholder="Masukan nomor telepon anda" required>
+                    </div>
+    
+                    <div class="form-input">
+                        <label for="input-jumlah"> Jumlah Tamu: </label>
+                        <input type="number" name="input-jumlah" id="input-jumlah" class="input" placeholder="0" required>
+                    </div>
+    
+                    <div class="form-input">
+                        <label for="input-tanggal"> Tanggal Reservasi: </label>
+                        <input type="date" name="input-tanggal" id="input-tanggal" class="input" required>
+                    </div>
+                    
+                    <div class="form-input">
+                        <label for="input-waktu"> Waktu Reservasi: </label>
+                        <input type="time" name="input-waktu" id="input-waktu" class="input" required>
+                    </div>
+    
+                    <div class="form-input">
+                        <label for="input-note"> Note: </label>
+                        <input type="text" name="input-note" id="input-note" class="input">
+                    </div>
+
+                    <div class="button-input">
+                        <div class="button-cancel">
+                            <input type="reset" value="Cancel">
+                        </div>
+    
+                        <div class="button-send">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #f7f7f7;">
+        <div class="d-flex flex-lg-row flex-md-column flex-sm-column justify-content-between px-5 pb-5 gap-md-5 pt-md-5">
+            <div class="logo-footer">
+                <img src="images/bottomlogo.png" alt="">
+            </div>
+    
+            <div class="d-flex flex-column align-items-lg-center align-items-md-start gap-3" id="kelompok-container">
+                <div class="d-flex flex-column align-items-lg-center" id="judul-kelompok">
+                    <h1> Kelompok 5 </h1>
+                    <p> Kelas 2023</p>
+                </div>
+    
+                <div class="d-flex flex-column" id="biodata">
+                    <div class="d-flex justify-content-center gap-lg-5" id="nama-member">
+                        <p> Claudia Cassandra </p>
+                        <p> Felicia Natalia </p>
+                        <p> Filbert Halim </p>
+                        <p> Gabriela Ruth </p>
+                        <p> Andreas </p>
+                    </div>
+    
+                    <div class="d-flex justify-content-center gap-5" id="nim-member">
+                        <p> 19210020 </p>
+                        <p> 19210021 </p>
+                        <p> 19210051 </p>
+                        <p> 19210052 </p>
+                        <p> 19210053 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

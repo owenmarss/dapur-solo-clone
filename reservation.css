@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Cabin Regular';
+    src: url(font/Cabin/static/Cabin-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cabin Semi';
+    src: url(font/Cabin/static/Cabin-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Cabin Bold';
+    src: url(font/Cabin/static/Cabin-Bold.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+#navbarNav a {
+    font-family: 'Cabin Semi';
+    font-size: 1.3rem;
+    color: #414141;
+}
+
+#navbarNav a:hover {
+    color: #c77a23;
+}
+
+.reservation {
+    position: relative;
+    background-color: #F1F1F1;
+}
+
+.background img {
+    width: 100%;
+}
+
+.reservation-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    padding-top: 3vh;
+    padding-bottom: 10vh;
+    padding-inline: 5vw;
+    align-items: center;    
+    border: 3px solid #F19C38;
+    border-radius: 20px;
+    position: absolute;
+    top: 30px;
+    left: 345px;
+    background-color: #ededed;
+}
+
+.judul-reservation h1 {
+    font-family: "Cabin Bold";
+    font-size: 40px;
+    color: #F19C38;
+    text-shadow: 2px 2px 2px black;
+}
+
+.isi-reservation form {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.form-input {
+    display: flex;
+    align-items: center;
+}
+
+.form-input label {
+    width: 200px;
+    color: #F19C38;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.form-input .input {
+    width: 250px;
+    font-size: 1rem;
+    padding: 8px 10px;
+    border: 2px solid #F19C38;
+}
+
+.button-input {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button-cancel input {
+    padding-block: 5px;
+    padding-inline: 10px;
+    background-color: #ffffff;
+    border: 3px solid #F19C38;
+    color: #F19C38;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button-cancel input:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.button-send input {
+    padding-block: 5px;
+    padding-inline: 10px;
+    background-color: #ffffff;
+    border: 3px solid #F19C38;
+    color: #F19C38;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button-send input:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.logo-footer img {
+    width: 110px;
+    padding-top: 40px;
+}
+
+#judul-kelompok h1 {
+    font-family: "Cabin Bold";
+}
+
+#judul-kelompok p {
+    font-family: "Cabin Regular";
+}
+
+#nama-member {
+    gap: 50px;
+}
+
+#biodata #nama-member p {
+    width: 150px;
+    font-family: "Cabin Regular";
+}
+
+#biodata #nim-member p {
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    .isi-reservation form {
+        gap: 2vh;
+    }
+
+    .reservation-container {
+        padding-top: 1vh;
+        padding-bottom: 5vh;
+        top: 10px;
+        left: 175px;
+        gap: 3vh;
+    }
+
+    .form-input label {
+        width: 170px;
+        font-size: 1rem;
+    }
+
+    .form-input .input {
+        width: 170px;
+        font-size: 0.7rem;
+        padding: 5px 8px;
+    }
+
+    .button-input {
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
+    #biodata #nama-member p {
+        width: 100px;
+    }
+
+    #biodata #nim-member p {
+        width: 100px;
+    }
+}
